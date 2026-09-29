@@ -23,7 +23,7 @@
 }
 
 body {
-    background: linear-gradient(180deg, var(--bg-dark) 0%, #120d17 35%, #2a1230 100%);
+    background-color: var(--bg-dark);
     color: var(--text-white);
     line-height: 1.6;
 }

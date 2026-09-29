@@ -8,40 +8,38 @@
 </head>
 <body>
 
-    <!-- Encabezado con Navegación Semántica -->
-    <header class="site-header">
+    <header class="site-header" aria-label="Cabecera principal">
         <div class="header-container">
-            <h1 class="logo">Dangelo Cortez</h1>
+            <h1 class="logo" aria-label="Nombre del portafolio">Dangelo Cortez</h1>
             <nav class="main-nav" aria-label="Navegación principal">
                 <ul>
-                    <li><a href="#sobre-mi">Sobre mí</a></li>
-                    <li><a href="#trabajos">Trabajos</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#sobre-mi" aria-label="Ir a la sección sobre mí">Sobre mí</a></li>
+                    <li><a href="#trabajos" aria-label="Ir a la sección de trabajos">Trabajos</a></li>
+                    <li><a href="#contacto" aria-label="Ir a la sección de contacto">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Contenido Principal -->
     <main>
-
-        <!-- Sección 1: Presentación / Sobre mí -->
-        <section id="sobre-mi" class="section sobre-mi">
+        <section id="sobre-mi" class="section sobre-mi" aria-labelledby="titulo-sobre-mi">
             <div class="section-container">
-                <h2>Sobre mí</h2>
-                <div class="bio-content">
+                <header class="section-header">
+                    <h2 id="titulo-sobre-mi">Sobre mí</h2>
+                </header>
+                <article class="bio-content">
                     <p>¡Hola! Soy <strong>Dangelo Cortez</strong>, estudiante de Bachiller e ingenieria en informatica y desarrollador web en formación, actualmente tengo 18 años y me apasiona el tema de desarrollo software, y todo lo que tiene que ver con ciberseguridad. Actualmente me encuentro aprendiendo las bases fundamentales de desarrollo web con HTML, CSS y JavaScript.</p>
-                </div>
+                </article>
             </div>
         </section>
 
-        <!-- Sección 2: Trabajos o Prácticas del Semestre -->
-        <section id="trabajos" class="section trabajos">
+        <section id="trabajos" class="section trabajos" aria-labelledby="titulo-trabajos">
             <div class="section-container">
-                <h2>Trabajos del Semestre</h2>
-                <div class="projects-grid">
-                    
-                    <article class="project-card">
+                <header class="section-header">
+                    <h2 id="titulo-trabajos">Trabajos del Semestre</h2>
+                </header>
+                <div class="projects-grid" aria-label="Lista de trabajos del semestre">
+                    <article class="project-card" aria-label="Proyecto 1: Mi Primer Portafolio">
                         <h3>Proyecto 1: Mi Primer Portafolio</h3>
                         <p>Construcción de un sitio web personal utilizando etiquetas semánticas de HTML5, estilos responsivos con CSS3 y publicación en GitHub Pages.</p>
                         <span class="tech-tag">HTML5</span>
@@ -49,65 +47,66 @@
                         <span class="tech-tag">Git</span>
                     </article>
 
-                  <article class="project-card">
-    <h3>Proyecto 2: Calculadora / Juego Interactivo</h3>
-    <p>Aplicación web enfocada en ejercitar la lógica de programación y la interacción con el usuario en tiempo real sin recargar la página.</p>
-    
-    <!-- paso 3 -->
-    <span class="tech-tag">JavaScript</span>
-    <span class="tech-tag">HTML5</span>
-    <span class="tech-tag">Lógica</span>
-</article>
-                    <article class="project-card">
+                    <article class="project-card" aria-label="Proyecto 2: Calculadora / Juego Interactivo">
+                        <h3>Proyecto 2: Calculadora / Juego Interactivo</h3>
+                        <p>Aplicación web enfocada en ejercitar la lógica de programación y la interacción con el usuario en tiempo real sin recargar la página.</p>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">Lógica</span>
+                    </article>
+
+                    <article class="project-card" aria-label="Proyecto 3: Ejercicios de Lógica">
                         <h3>Proyecto 3: Ejercicios de Lógica</h3>
                         <p>Resolución de problemas de programación inicial enfocados en algoritmos básicos y estructuras de control.</p>
                         <span class="tech-tag">Lógica</span>
                         <span class="tech-tag">JavaScript</span>
                     </article>
-
                 </div>
             </div>
         </section>
 
-        <!-- Sección 3: Contacto -->
-        <section id="contacto" class="section contacto">
+        <section id="contacto" class="section contacto" aria-labelledby="titulo-contacto">
             <div class="section-container">
-                <h2>Contacto</h2>
+                <header class="section-header">
+                    <h2 id="titulo-contacto">Contacto</h2>
+                </header>
+
                 <p>¿Tienes alguna consulta o propuesta? Envíame un mensaje:</p>
-               <p>📧 <strong>Correo:</strong> <a href="mailto:ayaladangelo62@gmail.com">ayaladangelo62@gmail.com</a></p>
-<p>📱 <strong>Instagram:</strong> <a href="https://instagram.com/daa_n.lov" target="_blank">@daa_n.lov</a></p>
-                
-                <form class="contact-form" action="#" method="post">
-                    <div class="form-group">
-                        <label for="nombre">Nombre completo:</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
-                    </div>
 
-                    <div class="form-group">
-                        <label for="correo">Correo electrónico:</label>
-                        <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
-                    </div>
+                <address>
+                    <p>📧 <strong>Correo:</strong> <a href="mailto:ayaladangelo62@gmail.com">ayaladangelo62@gmail.com</a></p>
+                    <p>📱 <strong>Instagram:</strong> <a href="https://instagram.com/daa_n.lov" target="_blank" rel="noopener noreferrer">@daa_n.lov</a></p>
+                </address>
 
-                    <div class="form-group">
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
-                    </div>
+                <form class="contact-form" action="#" method="post" aria-label="Formulario de contacto">
+                    <fieldset class="form-group" aria-labelledby="titulo-contacto">
+                        <legend>Datos del mensaje</legend>
 
-                    <button type="submit" class="btn-submit">Enviar mensaje</button>
+                        <label for="nombre" aria-label="Nombre completo">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" aria-required="true" required>
+
+                        <label for="correo" aria-label="Correo electrónico">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" aria-required="true" required>
+
+                        <label for="mensaje" aria-label="Mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." aria-required="true" required></textarea>
+                    </fieldset>
+
+                    <button type="submit" class="btn-submit" aria-label="Enviar mensaje">Enviar mensaje</button>
                 </form>
             </div>
         </section>
-
     </main>
 
-    <!-- Pie de Página Semántico -->
-    <footer class="site-footer">
+    <footer class="site-footer" aria-label="Pie de página">
         <p>Universidad Católica de Temuco</p>
-        <p class="footer-links">
-            <a href="https://github.com/DangeloCortez" target="_blank" rel="noopener noreferrer" class="footer-link footer-link--active">GitHub</a> |
-            <span class="footer-link footer-link--inactive">Render</span> |
-            <span class="footer-link footer-link--inactive">Vercel</span>
-        </p>
+        <nav aria-label="Enlaces del pie de página">
+            <p class="footer-links">
+                <a href="https://github.com/DangeloCortez" target="_blank" rel="noopener noreferrer" class="footer-link footer-link--active" aria-label="Ir a mi perfil de GitHub">GitHub</a> |
+                <span class="footer-link footer-link--inactive" aria-label="Render no disponible">Render</span> |
+                <span class="footer-link footer-link--inactive" aria-label="Vercel no disponible">Vercel</span>
+            </p>
+        </nav>
     </footer>
 
 </body>

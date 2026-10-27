@@ -1,6 +1,6 @@
-/* ==========================================
+
    1. VARIABLES DE COLOR (Negro y Rosa Neón)
-   ========================================== */
+   
 :root {
     --bg-dark: #0D0D11;          /* Fondo principal negro profundo */
     --bg-card: #16161E;          /* Negro suave / Gris muy oscuro para tarjetas */
@@ -12,9 +12,9 @@
     --border-dark: #2A2B3D;      /* Bordes sutiles oscuros */
 }
 
-/* ==========================================
+/* 
    2. ESTILOS BASE Y REINICIO
-   ========================================== */
+  
 * {
     margin: 0;
     padding: 0;
@@ -40,9 +40,9 @@ a:hover, a:focus {
     outline: none;
 }
 
-/* ==========================================
+/
    3. ENCABEZADO Y NAVEGACIÓN
-   ========================================== */
+   
 .site-header {
     background-color: var(--bg-card);
     border-bottom: 2px solid var(--primary-pink);
@@ -84,9 +84,9 @@ a:hover, a:focus {
     color: var(--primary-pink);
 }
 
-/* ==========================================
+/*
    4. SECCIONES Y CONTENEDORES
-   ========================================== */
+   
 .section {
     padding: 4rem 2rem;
 }
@@ -115,9 +115,9 @@ h2 {
     text-shadow: 0 0 8px var(--pink-glow);
 }
 
-/* ==========================================
+/* 
    5. TARJETAS DE PROYECTOS (Grid)
-   ========================================== */
+
 .projects-grid {
     display: grid;
     gap: 1.5rem;
@@ -164,9 +164,9 @@ h2 {
     margin-top: 0.3rem;
 }
 
-/* ==========================================
+/*
    6. FORMULARIO DE CONTACTO
-   ========================================== */
+  
 .contacto p {
     margin-bottom: 0.8rem;
     color: var(--text-muted);
@@ -230,9 +230,9 @@ h2 {
     transform: scale(1.02);
 }
 
-/* ==========================================
+/*
    7. PIE DE PÁGINA
-   ========================================== */
+  
 .site-footer {
     text-align: center;
     padding: 2rem;
@@ -266,10 +266,10 @@ h2 {
     user-select: none;
 }
 
-/* ==========================================
+/*
    8. 3 PUNTOS DE QUIEBRE (Módulos de Media Query)
    Exigidos explícitamente en la rúbrica
-   ========================================== */
+  
 
 /* 1. MÓVIL (< 600px) */
 @media (max-width: 600px) {
